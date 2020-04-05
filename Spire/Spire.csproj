@@ -62,6 +62,7 @@
   <ItemGroup>
     <Content Include="Content\block.png" />
     <Content Include="Content\char.png" />
+    <Content Include="Content\weird.mp3" />
     <Content Include="Icon.ico" />
   </ItemGroup>
   <ItemGroup>

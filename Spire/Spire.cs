@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
@@ -18,6 +19,8 @@ namespace Spire
     ICollection<GameObject> gameObjects = new List<GameObject>();
 
     SpriteFont font;
+
+    SoundEffect weird;
 
     public Spire()
     {
@@ -51,6 +54,11 @@ namespace Spire
       gameObjects.Add(new Player(Content) { Position = new Vector2(100, 100) });
 
       font = Content.Load<SpriteFont>("RubberBiscuit");
+
+      weird = Content.Load<SoundEffect>("weird");
+
+      var instance = weird.CreateInstance();
+      instance.Play();
     }
 
     /// <summary>
