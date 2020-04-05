@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
 using System;
 using System.Collections.Generic;
 
@@ -21,6 +22,7 @@ namespace Spire
     SpriteFont font;
 
     SoundEffect weird;
+    Song song;
 
     public Spire()
     {
@@ -59,6 +61,11 @@ namespace Spire
 
       var instance = weird.CreateInstance();
       instance.Play();
+
+      song = Content.Load<Song>("song");
+      MediaPlayer.Play(song);
+      //MediaPlayer.IsRepeating = true;
+      //MediaPlayer.MediaStateChanged += MediaPlayer_MediaStateChanged;
     }
 
     /// <summary>

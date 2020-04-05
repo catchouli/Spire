@@ -44,6 +44,12 @@
 /processorParam:TextureFormat=Compressed
 /build:RubberBiscuit.spritefont
 
+#begin song.wav
+/importer:WavImporter
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:song.wav
+
 #begin weird.mp3
 /importer:Mp3Importer
 /processor:SoundEffectProcessor
