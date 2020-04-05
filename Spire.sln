@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spire", "Spire\Spire.csproj", "{E754ECEE-09C1-4FC4-84A9-2350055FB2AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E754ECEE-09C1-4FC4-84A9-2350055FB2AA}.Debug|x86.ActiveCfg = Debug|x86
+		{E754ECEE-09C1-4FC4-84A9-2350055FB2AA}.Debug|x86.Build.0 = Debug|x86
+		{E754ECEE-09C1-4FC4-84A9-2350055FB2AA}.Release|x86.ActiveCfg = Release|x86
+		{E754ECEE-09C1-4FC4-84A9-2350055FB2AA}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50DEACE2-49A2-4AB5-8383-C34934018EF7}
+	EndGlobalSection
+EndGlobal
