@@ -67,6 +67,8 @@
   <ItemGroup>
     <MonoGameContentReference Include="Content\Content.mgcb" />
     <None Include="app.manifest" />
+    <None Include="Content\RubberBiscuit.spritefont" />
+    <None Include="Content\RubberBiscuit.TTF" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="NewFolder1\" />

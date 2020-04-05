@@ -17,6 +17,8 @@ namespace Spire
     Level level;
     ICollection<GameObject> gameObjects = new List<GameObject>();
 
+    SpriteFont font;
+
     public Spire()
     {
       graphics = new GraphicsDeviceManager(this);
@@ -47,6 +49,8 @@ namespace Spire
 
       level = new Level(Content);
       gameObjects.Add(new Player(Content) { Position = new Vector2(100, 100) });
+
+      font = Content.Load<SpriteFont>("RubberBiscuit");
     }
 
     /// <summary>
@@ -91,6 +95,7 @@ namespace Spire
       {
         obj.Draw(spriteBatch);
       }
+      spriteBatch.DrawString(font, "Font test", new Vector2(50, 50), Color.White);
       spriteBatch.End();
 
       base.Draw(gameTime);
